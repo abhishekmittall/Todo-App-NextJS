@@ -67,9 +67,4 @@ const Register = () => {
   );
 };
 
-export const metadata = {
-  title: "Register",
-  description: "This is the Register page of Todo App Project.",
-};
-
 export default Register;

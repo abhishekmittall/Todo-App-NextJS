@@ -58,9 +58,4 @@ const Login = () => {
   );
 };
 
-export const metadata = {
-  title: "Login",
-  description: "This is the Login page of Todo App Project.",
-};
-
 export default Login;
