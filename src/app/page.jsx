@@ -3,7 +3,7 @@ import AddTodoForm from "./components/addTodoForm";
 
 import Todos from "./components/todos";
 
-const page = async () => {
+const Page = async () => {
   return (
     <div className="container">
       <AddTodoForm />
@@ -14,4 +14,4 @@ const page = async () => {
   );
 };
 
-export default page;
+export default Page;
