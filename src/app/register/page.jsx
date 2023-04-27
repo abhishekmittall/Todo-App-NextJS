@@ -30,11 +30,11 @@ const Register = () => {
       setUser(data.user);
       toast.success(data.message);
     } catch (error) {
-      return toast.error(data.message);
+      return toast.error(error);
     }
   };
 
-  if (user._id) return redirect("/");
+  if (!user._id) return redirect("/");
 
   return (
     <div className="login">
