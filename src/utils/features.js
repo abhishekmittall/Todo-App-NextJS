@@ -5,7 +5,6 @@ import { User } from "@/models/user";
 
 export const connectDB = async () => {
   const { connection } = await mongoose.connect(process.env.MONGO_URI);
-  console.log(`Database Connected on ${connection.host}`);
 };
 
 export const cookieSetter = (res, token, set) => {
@@ -29,6 +28,6 @@ export const checkAuth = async (req) => {
   if (!cookie) return null;
 
   const token = cookie.split("=")[1];
-  const decoded = jwt.verify(token, process.env.JWT_SECRET); 
+  const decoded = jwt.verify(token, process.env.JWT_SECRET);
   return await User.findById(decoded._id);
 };

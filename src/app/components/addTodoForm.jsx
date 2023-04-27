@@ -4,7 +4,7 @@ import React, { useState, useContext } from "react";
 import { toast } from "react-hot-toast";
 import { Context } from "./Clients";
 
-const addTodoForm = () => {
+const AddTodoForm = () => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
 
@@ -58,4 +58,4 @@ const addTodoForm = () => {
   );
 };
 
-export default addTodoForm;
+export default AddTodoForm;

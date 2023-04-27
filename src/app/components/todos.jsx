@@ -18,7 +18,7 @@ const fetchTodo = async (token) => {
   }
 };
 
-const todos = async () => {
+const Todos = async () => {
   const token = cookies().get("token")?.value;
   const tasks = await fetchTodo(token);
   return (
@@ -38,4 +38,4 @@ const todos = async () => {
   );
 };
 
-export default todos;
+export default Todos;
