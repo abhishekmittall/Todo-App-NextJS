@@ -34,7 +34,7 @@ const Register = () => {
     }
   };
 
-  if (!user._id) return redirect("/");
+  if (user._id) return redirect("/");
 
   return (
     <div className="login">
@@ -69,7 +69,7 @@ const Register = () => {
 
 export const metadata = {
   title: "Register",
-  description: "This is the Register  page of Todo App Project.",
+  description: "This is the Register page of Todo App Project.",
 };
 
 export default Register;
