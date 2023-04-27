@@ -16,4 +16,9 @@ const Profile = () => {
   );
 };
 
+export const metadata = {
+  title: "Profile",
+  description: "This is the Profile page of Todo App Project.",
+};
+
 export default Profile;
